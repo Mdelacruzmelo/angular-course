@@ -8,6 +8,7 @@ import { Component, OnInit, DoCheck, OnDestroy } from '@angular/core';
 
 export class VideojuegoComponent implements OnInit, DoCheck, OnDestroy{
     constructor() {
+        console.log('Test line for commits');
         console.log('1.- Se ha cargado el constructor');
     }
 
