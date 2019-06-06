@@ -1,11 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div [ngStyle]="{ 'background': config.color }">
+
+  <nav>
+    <a [routerLink]="['/home']" [routerLinkActive]="['active']">Home</a>&nbsp;
+    <a [routerLink]="['/zapatillas']" [routerLinkActive]="['active']">Zapatillas</a>&nbsp;
+    <a [routerLink]="['/cursos']" [routerLinkActive]="['active']">Cursos</a>&nbsp;
+    <a [routerLink]="['/videojuego']" [routerLinkActive]="['active']">Videojuego</a>&nbsp;
+  </nav>
+  <hr>
+
   <h1>
     Welcome to {{ title }}!
   </h1>
 
   <p>{{ description }}</p>
-
+<!--
   <zapatillas></zapatillas>
   <app-cursos></app-cursos>
 
@@ -20,6 +29,6 @@
   </button>
 
   <videojuego *ngIf="togglear_videojuegos"></videojuego>
-
+-->
 </div>
 <router-outlet></router-outlet>
