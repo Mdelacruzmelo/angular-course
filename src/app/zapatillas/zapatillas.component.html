@@ -1,2 +1,8 @@
 <hr>
 <h3>{{titulo}}</h3>
+
+<ul>
+    <li *ngFor="let zapatilla of zapatillas">
+        Nombre: {{zapatilla.nombre}} - <strong> Precio: {{zapatilla.precio}} €</strong>
+    </li>
+</ul>
